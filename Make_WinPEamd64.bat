@@ -31,5 +31,10 @@ Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x8
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-EnhancedStorage_ja-jp.cab"
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\lp.cab"
 md "C:\WinPE_amd64\mount\windows\MyApp"
+
+echo Ummount image?
+echo If not Ummount, close this windos
+echo If mount, 
+pause
 Dism /unmount-image /mountdir:C:\WinPE_amd64\mount\ /commit
 MakeWinPEMedia /UFD C:\WinPE_amd64 E:
