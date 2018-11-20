@@ -1,6 +1,7 @@
 copype amd64 C:\WinPE_amd64
 Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /index:1 /MountDir:"C:\WinPE_amd64\mount"
 Dism /Set-ScratchSpace:256 /Image:"C:\WinPE_amd64\mount"
+dism /image:"C:\WinPE_amd64\mount" /set-allintl:ja-jp
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-MDAC.cab"
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\ja-jp\WinPE-MDAC_ja-jp.cab"
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-FMAPI.cab"
