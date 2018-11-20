@@ -8,7 +8,7 @@ dism /image:"C:\WinPE_amd64\mount" /Set-LayeredDriver:1
 dism /image:"C:\WinPE_amd64\mount" /Set-InputLocale:0409:00000409
 rem Keyboard=JIS
 rem dism /image:"C:\WinPE_amd64\mount" /Set-LayeredDriver:6
-remdism /image:"C:\WinPE_amd64\mount" /Set-InputLocale:ja-jp
+rem dism /image:"C:\WinPE_amd64\mount" /Set-InputLocale:ja-jp
 rem dism/image:"C:\WinPE_amd64\mount" /Set-InputLocale:0411:{03B5835F-F03C-411B-9CE2-AA23E1171E36}{A76C93D9-5523-4E90-AAFA-4DB112F9AC76}
 rem Set Options
 Dism /image:C:\WinPE_amd64\mount /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-MDAC.cab"
